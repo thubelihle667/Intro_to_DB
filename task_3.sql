@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS Order_Details (
         FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
 """")
-
+mycursor.execute("USE alx_book_store;")
 mycursor.execute("SHOW TABLES;")
 
 mycursor.close()
