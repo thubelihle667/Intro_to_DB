@@ -56,7 +56,12 @@ CREATE TABLE IF NOT EXISTS Order_Details (
 );
 """")
 
-mycursor.execute("SELECT * FROM Books;")
+mycursor.execute("""
+SELECT COLUMN_NAME, COLUMN_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'alx_book_store'
+AND TABLE_NAME = 'Books';
+""")
 myresult = mycursor.fetchall()
 
 for row in myresult:
