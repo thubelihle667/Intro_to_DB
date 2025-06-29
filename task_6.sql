@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS Order_Details (
 sql = "INSERT INTO customer (customer_id, customer_name, email, address ) VALUES (%s, %s, %s, %s)"
 val = [
     (2, "Blessing Malik", "bmalik@sandtech.com", "124 Happiness  Ave."),
-    (3, "Obed Ehoneah", "bmalik@sandtech.com", "125 Happiness  Ave."),
+    (3, "Obed Ehoneah", "eobed@sandtech.com", "125 Happiness  Ave."),
     (4, "Nehemial Kamolu", "nkamolu@sandtech.co", "126 Happiness  Ave.")
 ]
 
